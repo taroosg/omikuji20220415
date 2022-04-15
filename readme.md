@@ -1,5 +1,7 @@
 # おみくじ
 
+[https://taroosg.github.io/omikuji20220415/omikuji02.html](https://taroosg.github.io/omikuji20220415/omikuji02.html)
+
 ## プロダクトの紹介
 
 - おみくじのアプリケーション
