@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>乱数発生の練習</title>
+</head>
+
+<body>
+  <h1>乱数発生の練習</h1>
+
+  <script>
+    // ここに処理を追加
+
+    // const randomNumber = Math.random();
+    // console.log(randomNumber);
+
+    // 0から4
+    const sampleNumber = Math.floor(Math.random() * 5);
+    // console.log(sampleNumber);
+
+    // 0から9
+    const randomNumber1 = Math.floor(Math.random() * 10);
+    // console.log(randomNumber1);
+
+    // 1から9
+    const randomNumber2 = Math.floor(Math.random() * 9) + 1;
+    // console.log(randomNumber2);
+
+    // 5から10
+    const randomNumber3 = Math.floor(Math.random() * 6) + 5;
+    // console.log(randomNumber3);
+
+    // 50から99
+    const randomNumber4 = Math.floor(Math.random() * (99 - 50 + 1)) + 50;
+    // console.log(randomNumber4);
+
+    const result = [];
+    for (let i = 0; i < 1000; i++) {
+      result.push(Math.floor(Math.random() * (99 - 50 + 1)) + 50);
+    }
+    console.log('Max:' + Math.max(...result));
+    console.log('Max:' + Math.min(...result));
+
+    // 最小値と最大値を変数に入れて実行する
+    const min = 15;
+    const max = 20;
+    const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min
+    // console.log(randomNumber);
+
+  </script>
+</body>
+
+</html>

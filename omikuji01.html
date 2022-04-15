@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>おみくじ練習</title>
+</head>
+
+<body>
+  <script>
+    // ここに処理を追加
+
+    // const min = 0;
+    // const max = 4;
+    // const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min
+
+    // if (randomNumber === 0) {
+    //   alert('大吉');
+    // } else if (randomNumber === 1) {
+    //   alert('中吉');
+    // } else if (randomNumber === 2) {
+    //   alert('小吉');
+    // } else if (randomNumber === 3) {
+    //   alert('凶');
+    // } else if (randomNumber === 4) {
+    //   alert('大凶');
+    // } else {
+    //   alert('エラー');
+    // }
+
+    const min = 0;
+    const max = 99;
+    const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min
+
+    if (randomNumber === 0) {
+      alert('大吉');
+    } else if (1 <= randomNumber && randomNumber <= 5) {
+      alert('中吉');
+    } else if (6 <= randomNumber && randomNumber <= 10) {
+      alert('小吉');
+    } else if (11 <= randomNumber && randomNumber <= 30) {
+      alert('凶');
+    } else if (31 <= randomNumber) {
+      alert('大凶');
+    }
+
+  </script>
+</body>
+
+</html>
